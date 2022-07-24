@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica Git</title>
+    <link rel="shortcut icon" href="./src/img/logoPraxisicon.png" />
+    <!--Bootstrap 4.6-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav id="anclaNavbar"></nav>
+    <!--Informacion Sobre Git y GitHub-->
+    <div class="accordion" id="accordionExample" style="margin-inline: 40px; margin-top: 40px;">
+        <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  Git y Github: que son y primeros pasos
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse show"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <p>
+                  Git y Github se utilizan en la vida diaria de las personas que
+                  crean software por una razón muy simple: tener una manera fácil de
+                  administrar el código fuente de la aplicación, del sistema, del
+                  producto.
+                </p>
+                <p>
+                  En un equipo pequeño, algunas personas todavía intentan cuidar
+                  estos archivos de formas algo cuestionables: compartir directorios
+                  en la red, usar herramientas como Dropbox o mantener todo en un
+                  servidor FTP. Prácticas totalmente desaconsejadas.
+                </p>
+              </div>
+            </div>
+          </div>
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              ¿Qué es Git? un sistema de Control de Versión?
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse"
+          aria-labelledby="headingOne"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            <p>
+              No basta con poder acceder al código de otros colaboradores.
+              Necesitamos mantener el <strong>historial</strong> de nuestros
+              archivos. Más: de nuestras modificaciones, ya que a menudo
+              cambiamos archivos en grupo, en un solo movimiento (un
+              <strong>commit</strong>). De esa manera, podemos volver atrás y
+              recuperar el estado del sistema como estaba ayer o el año pasado,
+              y comparar los cambios, encontrar un bug, estudiar optimizaciones.
+            </p>
+            <p>
+              Todos nuestros archivos, así como sus historiales, están en uno
+              <strong>repositorio</strong> y había varios sistemas que
+              administraban dichos repositorios, como CVS y SVN. Git es una
+              alternativa que funciona aún más interesante: se distribuye y
+              todos tienen una copia completa del repositorio, no solo el
+              "servidor principal". Esto trae grandes ventajas que no necesita
+              aprender en este momento.
+            </p>
+            <p>
+              <strong
+                >Git es un sistema de control de versión distribuido y
+                ampliamente adoptado.</strong
+              >
+              Git nació y tomó el espacio de otros sistemas de control. Su
+              principal creador es el mismo que el de Linux: Linus Torvalds y se
+              ganó el corazón de las personas que trabajan con open source.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link btn-block text-left collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Github: usar Git sin tener que configurar y mantener un servidor
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseTwo"
+          class="collapse"
+          aria-labelledby="headingTwo"
+          data-parent="#accordionExample"
+        >
+          <div class="card-body">
+            <p>
+              Github tiene mucho que ver con Git.
+              <strong
+                >GitHub es una plataforma para administrar tu código y crear un
+                entorno colaborativo entre desarrolladores, utilizando Git como
+                sistema de control.</strong
+              >
+              Facilitará el uso de Git, ocultando algunos detalles de
+              configuración más complicados. Ahí es donde probablemente tendrás
+              tu repositorio y lo usarás a diario.
+            </p>
+            <p>
+              El sistema web que tiene te permite cambiar archivos ahí mismo,
+              aunque no es muy recomendable, ya que no tendrás un editor, un
+              entorno de desarrollo y pruebas. Para comunicarte con github y
+              modificar los archivos de tu repositorio, puedes usar la línea de
+              comando, usando el comando git y sus directivas de commit, pull y
+              push. ¿Tienes miedo? Existe una alternativa: usar una aplicación
+              desktop más intuitiva:
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <!--Scripts de bootstrap 4.6-->
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"
+  ></script>
+  <!--Scripts NavBar-->
+  <script src="./JavaScripts/navbar.js"></script>
+</html>
